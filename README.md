@@ -5,7 +5,7 @@ Kahootflood is a program especially designed to make people confused.
 Great for April fools pranks and jokes.
 
 ## Installation
-If you want the exe for quick use, go to https://kahootflood.weebly.com/download
+If you want the exe for quick use, go to https://kahootflood.weebly.com/d
 
 To run the source on your computer or you are not on windows, do the following:
 - Download node.js
