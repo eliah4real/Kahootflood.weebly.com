@@ -89,12 +89,6 @@ function join(name,idee) {
         }
     });
 
-    client.on("Disconnect",info => {
-        client.join(pin, name,["You","just","got","botted"]).catch(err=>{
-            console.log("Failed to join: " + err.description || err.status);
-          });
-    })
-
     client.on("TwoFactorWrong", function () {
         bot.answer2Step([getRandomInt(1,4),getRandomInt(1,4),getRandomInt(1,4),getRandomInt(1,4)])
     })
