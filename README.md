@@ -6,7 +6,8 @@ Great for April fools pranks and jokes.
 
 ## Installation
 If you want the exe for quick use, go to https://kahootflood.weebly.com/download \
-To run the source on your computer, do the following:
+
+To run the source on your computer or you are not on windows, do the following:
 - Download node.js
 - Download the source if you have not already
 - Run your computer's terminal and cd to the file you saved the source in
