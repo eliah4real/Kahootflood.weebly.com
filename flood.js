@@ -21,6 +21,7 @@ console.clear()
 console.log("==================")
 console.log("Kahoot flooder")
 console.log("Made by youtube.com/c/stephennobleisaperson")
+console.log("Website: kahootflood.weebly.com")
 console.log("==================\n")
 
 //QUESTIONS TO START FLOODING
@@ -35,6 +36,7 @@ if (ranname=="y"){
     botname = readline.question('Enter name> ');
     botprefix = readline.question('Enter prefix> ');
 }
+er = readline.question('Use name bypass? (y/n)> ');
 
 usercontrolled = readline.question('Controll the bots? (y/n)> ');
 
@@ -48,6 +50,7 @@ if (usercontrolled=="y"){
 console.clear()//nice and clean uwu
 
 var repeattimes=bots
+
 function spam() {
     
       if(!repeattimes==0){
@@ -75,11 +78,18 @@ process.setMaxListeners(Number.POSITIVE_INFINITY)
 Arandomint = 0
 
 function join(name,idee) {
+
     const client = new Kahoot();
     client.setMaxListeners(Number.POSITIVE_INFINITY)
-    client.join(pin, name,["You","just","got","botted"]).catch(err=>{
-        console.log("Failed to join: " + err.description || err.status);
-      });
+    if(er=="y"){
+        client.join(pin, name.replace(/a/g, 'ᗩ').replace(/b/g, 'ᗷ').replace(/c/g, 'ᑕ').replace(/d/g, 'ᗪ').replace(/e/g, 'E').replace(/f/g, 'ᖴ').replace(/g/g, 'G').replace(/h/g, 'ᕼ').replace(/i/g, 'I').replace(/j/g, 'ᒍ').replace(/k/g, 'K').replace(/l/g, 'ᒪ').replace(/m/g, 'ᗰ').replace(/n/g, 'ᑎ').replace(/o/g, 'O').replace(/p/g, 'ᑭ').replace(/q/g, 'ᑫ').replace(/r/g, 'ᖇ').replace(/s/g, 'ᔕ').replace(/t/g, 'T').replace(/u/g, 'ᑌ').replace(/v/g, 'ᐯ').replace(/w/g, 'ᗯ').replace(/x/g, '᙭').replace(/y/g, 'Y').replace(/z/g, 'ᘔ').replace(/A/g, 'ᗩ').replace(/B/g, 'ᗷ').replace(/C/g, 'ᑕ').replace(/D/g, 'ᗪ').replace(/E/g, 'E').replace(/F/g, 'ᖴ').replace(/G/g, 'G').replace(/H/g, 'ᕼ').replace(/I/g, 'I').replace(/J/g, 'ᒍ').replace(/K/g, 'K').replace(/L/g, 'ᒪ').replace(/M/g, 'ᗰ').replace(/N/g, 'ᑎ').replace(/O/g, 'O').replace(/P/g, 'ᑭ').replace(/Q/g, 'ᑫ').replace(/R/g, 'ᖇ').replace(/S/g, 'ᔕ').replace(/T/g, 'T').replace(/U/g, 'ᑌ').replace(/V/g, 'ᐯ').replace(/W/g, 'ᗯ').replace(/X/g, '᙭').replace(/Y/g, 'Y').replace(/Z/g, 'ᘔ'),["You","just","got","botted"]).catch(err=>{
+            console.log("Failed to join: " + err.description || err.status);
+        });
+    }else{
+        client.join(pin, name,["You","just","got","botted"]).catch(err=>{
+            console.log("Failed to join: " + err.description || err.status);
+        });
+    }
     client.on("Joined", info => {
         
         
