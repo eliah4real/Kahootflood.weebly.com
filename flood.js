@@ -21,7 +21,8 @@ console.clear()
 console.log("==================")
 console.log("Kahoot flooder")
 console.log("Made by youtube.com/c/stephennobleisaperson")
-console.log("Website: kahootflood.weebly.com")
+console.log("Website: kahootflood.weebly.com\n")
+console.log("PLEASE GIVE CREDIT TO ME")
 console.log("==================\n")
 
 //QUESTIONS TO START FLOODING
