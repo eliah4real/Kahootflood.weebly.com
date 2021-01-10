@@ -1,4 +1,4 @@
-console.log("Preparing...")
+console.log("Starting...")
 readline = require('readline-sync');
 console.log("Required readline-sync")
 const Kahoot = require("kahoot.js-updated");
@@ -7,7 +7,7 @@ var words = require('an-array-of-english-words')
 console.log("Required an-array-of-english-words")
 
 const cliProgress = require('cli-progress');
-const { brotliCompressSync } = require('zlib');
+const {brotliCompressSync} = require('zlib');
 console.log("Required cli-progress")
 
 function getRandomInt(min, max) {
@@ -26,13 +26,13 @@ console.log("PLEASE GIVE CREDIT TO ME")
 console.log("==================\n")
 
 //QUESTIONS TO START FLOODING
-pin = readline.question('Enter game pin> ');
-bots = readline.question('Enter number of bots> ');
-ranname = readline.question('Use random name? (y/n)> ');
+pin = readline.question('Enter game pin: ');
+bots = readline.question('Enter number of bots: ');
+ranname = readline.question('Use random name? (y/n): ');
 
-if (ranname=="y"){
+if (ranname == "y" || ranname == "yes"){
     ranname=true
-}else{
+} else {
     ranname=false
     botname = readline.question('Enter name> ');
     botprefix = readline.question('Enter prefix> ');
@@ -41,13 +41,13 @@ er = readline.question('Use name bypass? (y/n)> ');
 
 usercontrolled = readline.question('Controll the bots? (y/n)> ');
 
-if (usercontrolled=="y"){
+if (usercontrolled== "y" || usercontrolled == "yes")){
     usercontrolled =true
 }else{
     usercontrolled =false
 }
 
-//END QUESTIONS YAY
+//END QUESTIONS YAYYY
 console.clear()//nice and clean uwu
 
 var repeattimes=bots
@@ -169,8 +169,6 @@ function join(name,idee) {
 
                 }
 
-
-
                 if(question.quizQuestionAnswers[question.questionIndex]==3){
 
                     if (idee==1){
@@ -193,8 +191,6 @@ function join(name,idee) {
                        
                     }
                 }
-
-
 
                 if(question.quizQuestionAnswers[question.questionIndex]==4){
 
@@ -313,4 +309,4 @@ function join(name,idee) {
 console.log("Joining bots")
 const bar = new cliProgress.SingleBar({}, cliProgress.Presets.shades_classic);
 bar.start(bots, 0);
-spam()//YAY WE DID IT
+spam()//YAYYY WE DID IT
